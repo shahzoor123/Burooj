@@ -36,8 +36,7 @@ License: copyright commercial
 29. Clients Section
 30. Main Footer
 **********************************************/
-@import url("//db.onlinewebfonts.com/c/156d03e2ba07600d35076af7ffb4ddf9?family=SisBoomBahNFW00-Regular");
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap");
+
 @import url("animate.css");
 @import url("owl.css");
 @import url("swiper.min.css");
@@ -3355,7 +3354,6 @@ Section Title
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url(../images/main-slider/shape-2.png);
   content: "";
   z-index: 8;
   pointer-events: none;
