@@ -58,10 +58,10 @@ License: copyright commercial
   --border-theme-color1: var(--theme-color1);
   --border-theme-color2: var(--theme-color2);
   --border-theme-color3: var(--theme-color3);
-  --text-color-bg-theme-color1: #fff;
-  --text-color-bg-theme-color2: #ffffff;
-  --text-color-bg-theme-color3: #fff;
-  --text-color: #ffffff;
+  --text-color-bg-theme-color1: #000000;
+  --text-color-bg-theme-color2: #000000;
+  --text-color-bg-theme-color3: #000000;
+  --text-color: rgb(0, 0, 0);
   --headings-color: var(--theme-color1);
   --link-color: var(--theme-color1);
   --link-hover-color: var(--theme-color1);
@@ -110,12 +110,12 @@ License: copyright commercial
 */
 ::-moz-selection {
   background: var(--theme-color1);
-  color: #fff;
+  color: #000000;
   text-shadow: none;
 }
 ::selection {
   background: var(--theme-color1);
-  color: #fff;
+  color: #000000;
   text-shadow: none;
 }
 
@@ -164,7 +164,7 @@ body {
 }
 
 p, .text {
-  color: var(--text-color);
+  color: var(--heading-color);
   font-size: var(--body-font-size);
   font-family: var(--text-font);
   font-weight: var(--body-font-weight);
@@ -187,7 +187,7 @@ h5 .small, h6 small,
 h6 .small {
   font-weight: normal;
   line-height: 1;
-  color: var(--headings-color);
+  color: var();
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: inherit;
@@ -3529,7 +3529,7 @@ Section Title
   height: 100%;
   padding: 40px 40px 30px;
   background-color: #ffffff;
-  background-image: url(../images/icons/shape-1.jpg);
+  background-image: url(../images/icons/shape-1.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -7820,7 +7820,7 @@ Section Title
 }
 .project-section.style-two {
   background-color: var(--bg-theme-color1);
-  background-image: url(../images/icons/pattern-14.jpg);
+  background-image: url(../images/icons/pattern-14.webp);
   background-repeat: no-repeat;
   background-position: center top;
 }

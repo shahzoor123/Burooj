@@ -10,7 +10,7 @@
 <link href="css/style-dark.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 <link href="css/responsive.css" rel="stylesheet">
-<link href="css/style-dark.css" rel="stylesheet">
+<!-- <link href="css/style-dark.css" rel="stylesheet"> -->
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 <link rel="icon" href="images/favicon.png" type="image/x-icon">
 
@@ -29,42 +29,132 @@
 	<div class="preloader"></div>
 
 	<!-- Main Header-->
-	<header class="main-header header-style-one">
-		<!-- Header Top -->
-		
-
-			
-
-		
-
+	<header class="main-header header-style-four">
 		<!-- Header Lower -->
 		<div class="header-lower">
 			<!-- Main box -->
 			<div class="main-box">
 				<div class="logo-box">
-					<div class="logo"><a href="index.html"><img src="images/logo.png" alt="" title="Oitech"></a></div>
+					<div class="logo"><a href="index.html"><img src="images/BBT.png" alt="" title="Burooj"></a></div>
 				</div>
 
 				<!--Nav Box-->
-				<nav class="nav main-menu">
-					<ul class="navigation">
-						<li class="current"><a href="index.html">Home</a>
+				<div class="nav-outer">
+
+					<nav class="nav main-menu">
+						<ul class="navigation">
+							<li class="current"><a href="index.html">Home</a>
+								
+							</li>
+
+							<li><a href="page-services.html">Services</a></li>
+
+							<li><a href="page-projects.html">Projects</a></li>
+
+							<li ><a href="shop-products.html">Shop</a></li>
+
 							
-						</li>
+							<li ><a href="news-grid.html">News</a></li>
+							
+							
+							<li><a href="page-contact.html">Contact</a></li>
+<style>
+	/* Toggle Styles */
+.toggle-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
 
-						<li><a href="page-services.html">Services</a></li>
+.toggle-input {
+  display: none;
+}
 
-						<li><a href="page-projects.html">Projects</a></li>
+.toggle-label {
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: background-color 0.2s;
+}
 
-						<li ><a href="shop-products.html">Shop</a></li>
+.toggle-label:before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  top: 4px;
+  left: 4px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s, background-color 0.2s;
+}
 
-						
-						<li ><a href="news-grid.html">News</a></li>
-						
-						
-						<li><a href="page-contact.html">Contact</a></li>
-					</ul>
-				</nav>
+.toggle-input:checked + .toggle-label {
+  background-color: #FFD95A;
+}
+
+.toggle-input:checked + .toggle-label:before {
+  transform: translateX(26px);
+  background-color: #fff;
+}
+
+.toggle-text {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #000;
+}
+
+.toggle-input:checked + .toggle-label .toggle-text {
+  color: #fff;
+}
+
+</style>
+							<li> <div class="toggle-wrapper">
+								<input type="checkbox" id="toggle" class="toggle-input">
+								<label for="toggle" class="toggle-label">
+					
+								</label>
+							  </div></li>
+						</ul>
+					</nav>
+					<!-- Main Menu End-->
+				</div>
+<script>
+	// Theme Toggle
+const toggleSwitch = document.querySelector('.toggle-input');
+const toggleText = document.querySelector('.toggle-text');
+
+toggleSwitch.addEventListener('change', function() {
+  if (this.checked) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    toggleText.textContent = 'Light Mode';
+  } else {
+    document.documentElement.setAttribute('data-theme', 'light');
+    toggleText.textContent = 'Dark Mode';
+  }
+});
+
+</script>
+				<div class="outer-box">
+						<a href="tel:+92(8800)9806" class="info-btn">
+							<i class="icon fa fa-phone"></i>
+							<small>Call Anytime</small><br> + 88 ( 9800 ) 6802
+						</a>
+
+						<!-- Mobile Nav toggler -->
+						<div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+				</div>
 			</div>
 		</div>
 		<!-- End Header Lower -->
@@ -76,7 +166,7 @@
 			<!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
 			<nav class="menu-box">
 				<div class="upper-box">
-					<div class="nav-logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a></div>
+					<div class="nav-logo"><a href="index.html"><img src="images/BBT.png" alt="" title=""></a></div>
 					<div class="close-btn"><i class="icon fa fa-times"></i></div>
 				</div>
 
@@ -142,7 +232,7 @@
 				<div class="inner-container">
 					<!--Logo-->
 					<div class="logo">
-						<a href="index.html" title=""><img src="images/logo-2.png" alt="" title=""></a>
+						<a href="index.html" title=""><img src="images/BBT.png" alt="" title=""></a>
 					</div>
 
 					<!--Right Col-->
@@ -166,7 +256,7 @@
 	<!--End Main Header -->
 
 	<!-- Start main-content -->
-	<section class="page-title" style="background-image: url(images/background/page-title.jpg);">
+	<section  class="page-title" style="background-image: url(images/background/page-title.jpg); padding-top: 200px;">
 		<div class="auto-container">
 			<div class="title-outer">
 				<h1 class="title">Services</h1>
